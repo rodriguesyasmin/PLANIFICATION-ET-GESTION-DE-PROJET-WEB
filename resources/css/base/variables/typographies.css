@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Nico-Mojii';
+    src: url('../../../typographies/Nico-Moji/nicomoji/NicoMoji-Regular.ttf') format('ttf')
+}
+
+@font-face {
+    font-family: 'Lohit-Devanagari';
+    src: url('../../../typographies/lohit_devanagari/Lohit-Devanagari.ttf') format('ttf')
+}
+
+@font-face {
+    font-family: 'Alfa-Slab-One';
+    src: url('../../../typographies/Alfa_Slab_One/AlfaSlabOne-Regular.ttf') format('ttf')
+}
+
+
+:root {
+    --f-s:1rem;
+    --f-m: 1.5rem;
+    --f-l: 2rem;
+    --f-xl: 3rem;
+    --f-xxl: 4rem;
+  }
+  
+  h1, h2, h3{
+    font-family: "Nico-Mojii";
+  }
