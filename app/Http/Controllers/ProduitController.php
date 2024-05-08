@@ -51,7 +51,7 @@ class ProduitController extends Controller
 
         Produit::create($validatedData);
 
-        return redirect()->route('produits.index');
+        return redirect()->route('produit.index');
     }
 
     /**
