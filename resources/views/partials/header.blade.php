@@ -3,7 +3,7 @@
         <div class="uppercase text-gray-800 dark:text-white font-black text-3xl">
             Super Clothes
         </div>
-        
+
         <div >
             <img src="{{ Vite::asset('resources/img/SuperClothes_icon_transparent.png') }}" class="h-40 mr-6 sm:h-15" alt="Super Clothes Logo">
         </div>
