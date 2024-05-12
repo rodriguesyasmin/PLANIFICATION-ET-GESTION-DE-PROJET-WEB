@@ -12,5 +12,9 @@ Route::get('/', function (Request $request) {
 Route::resource('/produit', ProduitController::class); {
 }
 
-Route::get('stripe', [StripeController::class, 'stripe']);
-Route::post('stripe', [StripeController::class, 'stripePost'])->name('stripe.post');
+Route::resource('/stripe', StripeController::class); {
+}
+
+
+// Route::get('stripe', [StripeController::class, 'stripe']);
+// Route::post('stripe', [StripeController::class, 'stripePost'])->name('stripe.post');
