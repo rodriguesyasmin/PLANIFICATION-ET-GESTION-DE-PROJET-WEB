@@ -12,8 +12,8 @@ Route::get('/', function (Request $request) {
 Route::resource('/produit', ProduitController::class); {
 }
 
-Route::resource('/stripe', StripeController::class); {
-}
+    Route::resource('/stripe', StripeController::class); {
+    }
 
 
 // Route::get('stripe', [StripeController::class, 'stripe']);

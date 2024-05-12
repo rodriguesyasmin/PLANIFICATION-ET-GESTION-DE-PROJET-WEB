@@ -38,16 +38,16 @@
                 <div class="bg-white dark:bg-gray-800 flex relative z-20 items-center overflow-hidden">
                     <div class="container mx-auto px-6 flex relative py-16">
                         <div class="sm:w-2/3 lg:w-2/5 flex flex-col relative z-20  justify-center">
-                         
+
                             <h1 class="font-bebas-neue uppercase text-6xl sm:text-4xl font-black flex flex-col leading-none dark:text-white text-gray-800">
                                 Habillez-vous pour la job que vous voulez!
                             </h1>
                             <p class="text-sm sm:text-base text-gray-700 dark:text-white ">
                                 Des tenues modernes pour le super-héros que vous êtes                            </p>
-                        
+
                         </div>
                         <div class="hidden sm:block sm:w-1/3 lg:w-3/5 relative">
-    
+
                             <img src="{{ Vite::asset('resources/img/SuperClothes_icon_transparent.png') }}" class="max-w-md md:max-w-lg m-auto" alt="Super Clothes Logo">
                         </div>
                     </div>
@@ -118,19 +118,19 @@
                         </svg>
                     </a>
                 </li>
-          
-          
-          
+
+
+
             </ul>
             <span class="block text-sm text-center text-gray-500">
                 <a href="https://flowbite.com"
-                    class="text-purple-600 hover:underline">Super Clothes ©</a> 
+                    class="text-purple-600 hover:underline">Super Clothes ©</a>
                     <a
                     href="https://tailwindcss.com" class="text-purple-600 hover:underline">- Tous droits réservés
                 </a>.
             </span>
-        
-        
+
+
         </div>
     </body>
     </html>
