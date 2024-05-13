@@ -53,6 +53,7 @@
                 @enderror
             </div>
 
+
             <div class="flex items-center bg-[#F2C749] rounded-b-lg border-[#FF7755] mb-10">
                 <label for="categorie" class="w-20 text-right p-4 mr-8 text-[#231F52]">Catégorie</label>
                 <input type="text" name="categorie" id="categorie" placeholder="Catégorie"
