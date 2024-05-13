@@ -2,49 +2,78 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use Session;
-use Stripe;
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
+
+use Illuminate\Http\RedirectResponse;
+use Stripe\Checkout\Session;
+use Stripe\Exception\ApiErrorException;
+use Stripe\Stripe;
 
 class StripeController extends Controller
 {
-    public function create()
+    /**
+     * @return View|Factory|Application
+     */
+    public function checkout(): View|Factory|Application
     {
-        return view('stripe.create');
+        return view('stripe/checkout');
+    }
+
+    /**
+     * @return RedirectResponse
+     * @throws ApiErrorException
+     */
+    public function test(): RedirectResponse
+    {
+        Stripe::setApiKey(config('stripe.test.sk'));
+
+        return redirect()->away('https://checkout.stripe.com/pay' .
+            '?key=' . config('stripe.test.pk') . // Publishable key
+            '&locale=en' . // Language locale
+            '&currency=gbp' . // Currency
+            '&name=T-shirt' . // Product name
+            '&amount=500' . // Amount (in cents)
+            '&cancel_url=' . route('checkout') . // Cancel URL
+            '&success_url=' . route('success')); // Success URL
     }
 
 
-    public function store(Request $request)
+    /**
+     * @return RedirectResponse
+     * @throws ApiErrorException
+     */
+    public function live(): RedirectResponse
     {
-        echo "<pre>";
-    print_r($request->all());
-    echo "</pre>";
-        \Stripe\Stripe::setApiKey(env('STRIPE_SECRET_KEY'));
+        Stripe::setApiKey(config('stripe.live.sk'));
 
-        try {
-            $token = \Stripe\Token::create([
-                'card' => [
-                    'number' => $request->get('card_number'),
-                    'exp_month' => $request->get('exp_month'),
-                    'exp_year' => $request->get('exp_year'),
-                    'cvc' => $request->get('cvv'),
+        $session = Session::create([
+            'line_items'  => [
+                [
+                    'price_data' => [
+                        'currency'     => 'gbp',
+                        'product_data' => [
+                            'name' => 'T-shirt',
+                        ],
+                        'unit_amount'  => 500,
+                    ],
+                    'quantity'   => 1,
                 ],
-            ]);
+            ],
+            'mode'        => 'payment',
+            'success_url' => route('success'),
+            'cancel_url'  => route('checkout'),
+        ]);
 
-            $charge = \Stripe\Charge::create([
-                'amount' => 1000,
-                'currency' => 'usd',
-                'description' => 'achat',
-                'source' => $token->id,
-            ]);
+        return redirect()->away($session->url);
+    }
 
-
-            return redirect()->route('/')->with('success', 'pay ok!');
-
-        } catch (\Stripe\Exception\CardException $e) {
-            return back()->withErrors(['stripe_error' => $e->getMessage()]);
-        } catch (\Exception $e) {
-            return back()->withErrors(['stripe_error' => $e->getMessage()]);
-        }
+    /**
+     * @return View|Factory|Application
+     */
+    public function success(): View|Factory|Application
+    {
+        return view('success');
     }
 }
