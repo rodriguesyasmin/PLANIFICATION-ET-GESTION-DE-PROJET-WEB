@@ -5,14 +5,7 @@
         </div>
 
         <div>
-            <img src="{{ Vite::asset('resources/img/SuperClothes_icon_transparent.png') }}" class="h-40 mr-6 sm:h-15"
-                alt="Super Clothes Logo">
-            <div>
-                <a href="/">
-                    <img src="{{ Vite::asset('resources/img/SuperClothes_icon_transparent.png') }}"
-                        class="h-40 mr-6 sm:h-15 " alt="Super Clothes Logo">
-                </a>
-            </div>
+
             <div class="flex items-center">
                 @include('partials.nav')
             </div>

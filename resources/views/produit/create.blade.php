@@ -52,24 +52,7 @@
                 <p class="text-red-500 text-lg">{{ $message }}</p>
                 @enderror
             </div>
-            <div class="flex items-center bg-[#F2C749] rounded-b-lg border-[#FF7755] mb-10">
-                <label for="photo2" class="w-20 text-right p-4 mr-8 text-[#231F52]">Photo 2</label>
-                <input type="file" name="photo2" id="photo2"
-                    class="flex-1 p-4 pl-0 bg-transparent outline-none text-[#231F52] overflow-ellipsis overflow-hidden"
-                    value="{{ old('photo2') }}">
-                @error('photo2')
-                <p class="text-red-500 text-lg">{{ $message }}</p>
-                @enderror
-            </div>
-            <div class="flex items-center bg-[#F2C749] rounded-b-lg border-[#FF7755] mb-10">
-                <label for="photo3" class="w-20 text-right p-4 mr-8 text-[#231F52]">Photo 3</label>
-                <input type="file" name="photo3" id="photo3"
-                    class="flex-1 p-4 pl-0 bg-transparent outline-none text-[#231F52] overflow-ellipsis overflow-hidden"
-                    value="{{ old('photo3') }}">
-                @error('photo3')
-                <p class="text-red-500 text-lg">{{ $message }}</p>
-                @enderror
-            </div>
+
             <div class="flex items-center bg-[#F2C749] rounded-b-lg border-[#FF7755] mb-10">
                 <label for="categorie" class="w-20 text-right p-4 mr-8 text-[#231F52]">Catégorie</label>
                 <input type="text" name="categorie" id="categorie" placeholder="Catégorie"
