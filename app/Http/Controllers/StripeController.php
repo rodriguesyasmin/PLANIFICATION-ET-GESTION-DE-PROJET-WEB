@@ -25,7 +25,7 @@ class StripeController extends Controller
      * @return RedirectResponse
      * @throws ApiErrorException
      */
-    public function test(): RedirectResponse
+   public function test(): RedirectResponse
     {
         Stripe::setApiKey(config('stripe.test.sk'));
 
