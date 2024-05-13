@@ -9,12 +9,8 @@ Route::get('/', function (Request $request) {
     return view('index');
 })->name('index');
 
-Route::resource('/produit', ProduitController::class); {
-}
-
-    Route::resource('/stripe', StripeController::class); {
-    }
-
+Route::resource('/produit', ProduitController::class);
+Route::resource('/stripe', StripeController::class); 
 
 // Route::get('stripe', [StripeController::class, 'stripe']);
 // Route::post('stripe', [StripeController::class, 'stripePost'])->name('stripe.post');
