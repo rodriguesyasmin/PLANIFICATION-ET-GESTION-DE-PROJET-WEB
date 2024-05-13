@@ -1,0 +1,14 @@
+body{
+    background-color: var(--bleu-foncee);
+   
+.container{
+    & h1{
+        color:var(--bleu-pale);
+
+    }
+    & p {
+        color: var(--jaune);
+    }
+}
+
+}

@@ -1,0 +1,8 @@
+nav {
+    & a{
+        color:var(--jaune);
+    }
+    & a:hover{
+        text-decoration: underline;
+    }
+}
