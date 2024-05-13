@@ -13,8 +13,8 @@ Route::resource('/produit', ProduitController::class); {
 }
 
 Route::get('/stripe', 'App\Http\Controllers\StripeController@checkout')->name('checkout');
-Route::post('stripe/test', 'App\Http\Controllers\StripeController@test');
-Route::get('/success', 'App\Http\Controllers\StripeController@success')->name('success');
+Route::post('/stripe/test', 'App\Http\Controllers\StripeController@test');
+Route::get('/stripe/success', 'App\Http\Controllers\StripeController@success')->name('success');
 
 
 // Route::get('stripe', [StripeController::class, 'stripe']);

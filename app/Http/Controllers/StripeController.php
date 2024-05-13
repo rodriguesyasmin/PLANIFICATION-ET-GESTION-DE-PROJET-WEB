@@ -18,25 +18,35 @@ class StripeController extends Controller
      */
     public function checkout(): View|Factory|Application
     {
-        return view('stripe/checkout');
+        return view('stripe.checkout');
     }
 
     /**
      * @return RedirectResponse
      * @throws ApiErrorException
      */
-   public function test(): RedirectResponse
+    public function test(): RedirectResponse
     {
         Stripe::setApiKey(config('stripe.test.sk'));
 
-        return redirect()->away('https://checkout.stripe.com/pay' .
-            '?key=' . config('stripe.test.pk') . // Publishable key
-            '&locale=en' . // Language locale
-            '&currency=gbp' . // Currency
-            '&name=T-shirt' . // Product name
-            '&amount=500' . // Amount (in cents)
-            '&cancel_url=' . route('checkout') . // Cancel URL
-            '&success_url=' . route('success')); // Success URL
+        $session = \Stripe\Checkout\Session::create([
+            'payment_method_types' => ['card'],
+            'line_items' => [[
+                'price_data' => [
+                    'currency' => 'usd',
+                    'product_data' => [
+                        'name' => 'T-shirt',
+                    ],
+                    'unit_amount' => 2000,
+                ],
+                'quantity' => 1,
+            ]],
+            'mode' => 'payment',
+            'success_url' => 'https://your-domain.com/success?session_id={CHECKOUT_SESSION_ID}',
+            'cancel_url' => 'https://your-domain.com/cancel',
+        ]);
+
+        return redirect($session->url, 303);
     }
 
 
