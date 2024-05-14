@@ -23,5 +23,9 @@
   }
   
   h1, h2, h3{
-    font-family: "Nico-Mojii";
+    
+    font-family: "Nico-Mojii" ;
+  }
+  .logo{
+    font-family: "Alfa-Slab-One";
   }

@@ -10,14 +10,18 @@
                 <div class="flex flex-col md:flex-row -mx-4">
                     <div class="md:flex-1 px-4">
                         <div class="h-[460px] rounded-lg bg-gray-300 dark:bg-gray-700 mb-4">
-                            <img class="w-full h-full object-cover" src="/storage/{{ $produit->photo }}"
+                            <img class="w-full h-full object-cover"
+                                src="{{ Vite::asset('storage/app/public/' . $produit->photo) }}"
                                 alt="storage/{{ $produit->titre }}">
                         </div>
                         <div class="flex -mx-2 mb-4">
                             <div class="w-1/2 px-2">
-                                <button
-                                    class="w-full bg-gray-900 dark:bg-gray-600 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-700">Add
-                                    to Cart</button>
+                                <form action="stripe/test" method="POST">
+                                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                    <button type="submit" id="checkout-test-button"
+                                        class="w-full bg-gray-900 dark:bg-gray-600 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-700">Checkout
+                                        (Test)</button>
+                                </form>
                             </div>
                         </div>
                     </div>
