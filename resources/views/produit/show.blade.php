@@ -16,9 +16,12 @@
                         </div>
                         <div class="flex -mx-2 mb-4">
                             <div class="w-1/2 px-2">
-                                <button
-                                    class="w-full bg-gray-900 dark:bg-gray-600 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-700">Add
-                                    to Cart</button>
+                                <form action="stripe/test" method="POST">
+                                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                    <button type="submit" id="checkout-test-button"
+                                        class="w-full bg-gray-900 dark:bg-gray-600 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-700">Checkout
+                                        (Test)</button>
+                                </form>
                             </div>
                         </div>
                     </div>
