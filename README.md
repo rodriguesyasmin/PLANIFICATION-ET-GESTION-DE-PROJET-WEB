@@ -2,12 +2,25 @@
 
 Bienvenue sur **SuperClothes**, un site de vente de vêtements inspirés par les super-héros et leurs professions. Que vous soyez un fan de Superman le journaliste ou d'autres héros emblématiques, SuperClothes propose une variété de vêtements pour chaque passionné.
 
+![image](https://github.com/rodriguesyasmin/PLANIFICATION-ET-GESTION-DE-PROJET-WEB/assets/128430011/3662f5f7-6235-4b85-8d5a-208b73c8cf9d)
+
+
 ## Fonctionnalités
 
 - **Connexion et déconnexion** : Les utilisateurs peuvent se connecter et se déconnecter de leur compte.
 - **Gestion des utilisateurs** : Gérez les comptes des utilisateurs (CRUD : Créer, Lire, Mettre à jour, Supprimer).
 - **Gestion des produits** : Gérez les produits disponibles à la vente (CRUD : Créer, Lire, Mettre à jour, Supprimer).
 - **Interface utilisateur intuitive** : Une interface claire et facile à naviguer pour une expérience utilisateur optimale.
+- 
+ ##  Responsabilités de développement :
+# Backend:
+- Yasmin Rodrigues ([GitHub](https://github.com/rodriguesyasmin)) 🔗
+- Tiago Barros ([GitHub](https://github.com/tiagolp22)) 🔗
+
+# Frontend:
+- Clara Quintela ([GitHub](https://github.com/claraquintela)) 🔗
+- Matheus Lopes ([GitHub](https://github.com/matheusandrei)) 🔗
+
 
 ## Technologies utilisées
 
