@@ -98,7 +98,7 @@
 
     </section>
 
-    <div class="text-center bg-[#FF7755]">
+    <div class="text-center bg-[#FF7755] w-4/5 mx-auto rounded-2xl"">
         <a href="#" class="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900">
             <img src="{{ Vite::asset('resources/img/SuperClothes_icon_transparent.png') }}" class="h-36 mr-6 sm:h-15"
                 alt="Super Clothes Logo">

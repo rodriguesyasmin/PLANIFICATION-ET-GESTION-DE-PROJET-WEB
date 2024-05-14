@@ -1,7 +1,7 @@
-<footer>
-    <div class="text-center bg-#FF7755">
+<footer class="w-4/5 mx-auto rounded-2xl" >
+    <div class="text-center bg-#FF7755  ">
         <a href="#" class="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900">
-            <img src="{{ Vite::asset('resources/img/SuperClothes_icon_transparent.png') }}" class="h-36 mr-6 sm:h-15"
+            <img src="{{ Vite::asset('resources/img/SuperClothes_icon_transparent.png') }}" class="h-36  sm:h-15"
                 alt="Super Clothes Logo">
         </a>
         <ul class="flex justify-center mt-5 space-x-5">
