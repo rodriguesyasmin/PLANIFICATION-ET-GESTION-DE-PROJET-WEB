@@ -5,12 +5,12 @@
 @section('content')
 
     <main>
-        <div class="bg-gray-100 dark:bg-gray-800 py-8">
+        <div class=" dark:bg-gray-800 py-8">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex flex-col md:flex-row -mx-4">
-                    <div class="md:flex-1 px-4">
-                        <div class="h-[460px] rounded-lg bg-gray-300 dark:bg-gray-700 mb-4">
-                            <img class="w-full h-full object-cover"
+                <div class="flex flex-col md:flex-row  bg-[#8AD9D7] -mx-4 p-10 rounded-2xl">
+                    <div class="md:flex-1  px-4">
+                        <div class="h-[460px] rounded-lg  dark:bg-gray-700 mb-4">
+                            <img class="w-full h-full object-cover rounded-2xl"
                                 src="{{ Vite::asset('storage/app/public/' . $produit->photo) }}"
                                 alt="storage/{{ $produit->titre }}">
                         </div>
