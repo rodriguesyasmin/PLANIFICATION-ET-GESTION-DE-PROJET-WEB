@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "444ce74754da0889c90d9700e1c9986c",
+    "content-hash": "8313d422078f0bacb9399fdc4fae17ef",
     "packages": [
         {
             "name": "brick/math",
@@ -7768,6 +7768,76 @@
                 }
             ],
             "time": "2024-02-02T06:10:47+00:00"
+        },
+        {
+            "name": "sinnbeck/laravel-dom-assertions",
+            "version": "v1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sinnbeck/laravel-dom-assertions.git",
+                "reference": "bc19b20cf029e7271813e744e89c435b1836e8b5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sinnbeck/laravel-dom-assertions/zipball/bc19b20cf029e7271813e744e89c435b1836e8b5",
+                "reference": "bc19b20cf029e7271813e744e89c435b1836e8b5",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "illuminate/testing": "^9.0|^10.0|^11.0",
+                "php": "^8.0",
+                "symfony/css-selector": "^6.0|^7.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.2",
+                "nunomaduro/larastan": "^2.2",
+                "orchestra/testbench": "^7.0|^8.0|^9.0",
+                "pestphp/pest": "^1.0|^2.34",
+                "phpstan/extension-installer": "^1.2",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.1",
+                "vimeo/psalm": "^4.29|^5.22"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Sinnbeck\\DomAssertions\\DomAssertionsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Sinnbeck\\DomAssertions\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "René Sinnbeck",
+                    "email": "rene.sinnbeck@gmail.com",
+                    "homepage": "https://sinnbeck.dev",
+                    "role": "Developer"
+                }
+            ],
+            "homepage": "https://github.com/sinnbeck/laravel-dom-assertions",
+            "keywords": [
+                "assertions",
+                "blade",
+                "dom",
+                "laravel",
+                "view"
+            ],
+            "support": {
+                "issues": "https://github.com/sinnbeck/laravel-dom-assertions/issues",
+                "source": "https://github.com/sinnbeck/laravel-dom-assertions/tree/v1.5.0"
+            },
+            "time": "2024-03-13T07:16:04+00:00"
         },
         {
             "name": "spatie/backtrace",
