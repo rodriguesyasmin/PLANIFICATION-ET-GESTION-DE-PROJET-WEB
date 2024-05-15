@@ -5,7 +5,7 @@
 @section('content')
 
     <main>
-        <div class=" dark:bg-gray-800 py-8">
+        <div class=" py-8">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-col md:flex-row  bg-[#8AD9D7] -mx-4 p-10 rounded-2xl">
                     <div class="md:flex-1  px-4">
@@ -42,15 +42,15 @@
                             <span class="font-bold text-gray-700 ">Select Size:</span>
                             <div class="flex items-center mt-2">
                                 <button
-                                    class="bg-gray-300 dark:bg-gray-700 text-gray-700 dark: py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600">S</button>
+                                    class="bg-[#F2C749]  text-gray-700 dark: py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600">S</button>
                                 <button
-                                    class="bg-gray-300 dark:bg-gray-700 text-gray-700 dark: py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600">M</button>
+                                    class="bg-[#F2C749]  text-gray-700 dark: py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600">M</button>
                                 <button
-                                    class="bg-gray-300 dark:bg-gray-700 text-gray-700 dark: py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600">L</button>
+                                    class="bg-[#F2C749]  text-gray-700 dark: py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600">L</button>
                                 <button
-                                    class="bg-gray-300 dark:bg-gray-700 text-gray-700 dark: py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600">XL</button>
+                                    class="bg-[#F2C749]  text-gray-700 dark: py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600">XL</button>
                                 <button
-                                    class="bg-gray-300 dark:bg-gray-700 text-gray-700 dark: py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600">XXL</button>
+                                    class="bg-[#F2C749] dark:bg-gray-700 text-gray-700 dark: py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600">XXL</button>
                             </div>
                         </div>
                         <div>
