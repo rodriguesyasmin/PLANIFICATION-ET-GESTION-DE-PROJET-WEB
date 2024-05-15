@@ -50,7 +50,7 @@
                                 <button
                                     class="bg-[#F2C749]  text-gray-700 dark: py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600">XL</button>
                                 <button
-                                    class="bg-[#F2C749] dark:bg-gray-700 text-gray-700 dark: py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600">XXL</button>
+                                    class="bg-[#F2C749]  text-gray-700 dark: py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600">XXL</button>
                             </div>
                         </div>
                         <div>
